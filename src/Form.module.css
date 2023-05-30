@@ -1,0 +1,10 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 10px;
+}
+.container label {
+	margin-right: 5px;
+    color: rgb(36, 62, 189);
+}

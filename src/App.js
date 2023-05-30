@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Form from './Form'
+import Group from './Group'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [noOfCounters, setNoOfCounters] = useState(1)
+	const [noOfGroups, setNoOfGroups] = useState(1)
+
+	const changeNoOfCountersHandler = function (n, g) {
+		n = Number(n)
+		g = Number(g)
+		setNoOfCounters(n)
+		setNoOfGroups(g)
+	}
+
+	return (
+		<>
+			<Form noOfCounters={noOfCounters} changeNoOfCounters={changeNoOfCountersHandler}></Form>
+			{noOfGroups &&
+				new Array(noOfGroups).fill(0).map((_, index) => <Group key={index} noOfCounters={Number(noOfCounters)} />)}
+		</>
+	)
 }
 
-export default App;
+export default App
