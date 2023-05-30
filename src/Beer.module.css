@@ -1,7 +1,7 @@
 .beer {
 	margin: 1rem;
 	padding: 1rem;
-	background-color: #f80606;
+	background-color: #9590b2;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	border-radius: 12px;
 	text-align: center;
@@ -9,12 +9,12 @@
 }
 
 .beer h2 {
-	font-size: 2rem;
+	font-size: 1rem;
 	color: #f4eee9;
 }
 
 .beer h3 {
 	color: #f4eee9;
 	margin: 0;
-	font-size: 1rem;
+	font-size: 2rem;
 }

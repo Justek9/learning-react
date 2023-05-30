@@ -3,7 +3,6 @@ import MasterButton from './MasterButton'
 import Counter from './Counter'
 
 const Group = function (props) {
-	console.log(props.noOfCounters)
 	const [counters, setCounters] = useState(new Array(props.noOfCounters).fill(0, 0, props.noOfCounters))
 
 	useEffect(() => {
