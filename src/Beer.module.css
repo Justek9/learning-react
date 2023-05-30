@@ -1,0 +1,20 @@
+.beer {
+	margin: 1rem;
+	padding: 1rem;
+	background-color: #f80606;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	border-radius: 12px;
+	text-align: center;
+	color: white;
+}
+
+.beer h2 {
+	font-size: 2rem;
+	color: #f4eee9;
+}
+
+.beer h3 {
+	color: #f4eee9;
+	margin: 0;
+	font-size: 1rem;
+}

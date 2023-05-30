@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-beer {
+	height: 50px;
+	width: 150px;
+	color: white;
+	background-color: rgb(22, 53, 140);
+	border-radius: 10px;
+	margin-top: 50px;
+}
